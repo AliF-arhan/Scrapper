@@ -1,70 +1,66 @@
-import axios from "axios";
-import * as cheerio from "cheerio";
-
 import { CONFIG } from "./config.js";
+
 import { getCategoryPage } from "./services/getCategoryPage.js";
 import { getListings } from "./services/getListings.js";
+import { getDetails } from "./services/getDetails.js";
 
 async function scrape() {
 
-    console.log("Loading category...");
+    console.log("Loading category page...");
 
-    // Get the category page
+    // Load category page
     const $ = await getCategoryPage(
         CONFIG.START_URL,
         CONFIG.HEADERS
     );
 
-    // Extract all listings
+    // Get all listings
     const listings = getListings($);
 
-    console.log(`Found ${listings.length} listings`);
+    console.log(`Found ${listings.length} listings\n`);
 
-    // Take the first listing for testing
-    const firstListing = listings[0];
+    const machines = [];
 
-    console.log(firstListing);
+    // Loop through every listing
+    for (let i = 0; i < listings.length; i++) {
 
-    // Download the detail page
-    const response = await axios.get(
-        firstListing.url,
-        {
-            headers: CONFIG.HEADERS
+        const listing = listings[i];
+
+        console.log(`====================================`);
+        console.log(`Machine ${i + 1} / ${listings.length}`);
+        console.log(`Model: ${listing.title}`);
+        console.log(`URL: ${listing.url}`);
+        console.log(`====================================`);
+
+        try {
+
+            const machine = await getDetails(
+                listing.url,
+                CONFIG.HEADERS
+            );
+
+            machines.push(machine);
+
+            console.log("✅ Success\n");
+
+        } catch (err) {
+
+            console.log("❌ Failed");
+            console.log(err.message);
+            console.log();
+
         }
-    );
+    }
 
-    // Load detail page into Cheerio
-    const $$ = cheerio.load(response.data);
+    console.log("\n====================================");
+    console.log("SCRAPING COMPLETE");
+    console.log("====================================");
 
-    // Print page title
-    console.log($$("title").text());
+    console.log(`Successfully scraped ${machines.length} machines.\n`);
 
-    // -------------------------
-    // PARAMETERS
-    // -------------------------
-
-    const parameters = {};
-
-    $$(".flex.items-center.justify-between").each((_, element) => {
-
-        const key = $$(element)
-            .find(".text-gray-700")
-            .text()
-            .trim();
-
-        const value = $$(element)
-            .find(".text-gray-900")
-            .text()
-            .replace(/\s+/g, " ")
-            .trim();
-
-        if (key) {
-            parameters[key] = value;
-        }
-
+    console.dir(machines, {
+        depth: null
     });
-
-    console.log(parameters);
 
 }
 
