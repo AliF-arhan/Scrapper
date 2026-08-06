@@ -1,8 +1,10 @@
 import { CONFIG } from "./config.js";
-
 import { getCategoryPage } from "./services/getCategoryPage.js";
 import { getListings } from "./services/getListings.js";
 import { getDetails } from "./services/getDetails.js";
+
+// 1. Import node's built-in file system module
+import { writeFile } from "node:fs/promises";
 
 async function scrape() {
 
@@ -58,9 +60,17 @@ async function scrape() {
 
     console.log(`Successfully scraped ${machines.length} machines.\n`);
 
-    console.dir(machines, {
-        depth: null
-    });
+    // 2. Save data to a file
+    try {
+        const filePath = "./machines.json";
+        
+        // JSON.stringify(..., null, 2) formats it nicely with 2 spaces indentation
+        await writeFile(filePath, JSON.stringify(machines, null, 2), "utf-8");
+        
+        console.log(`💾 Scraped data saved successfully to ${filePath}`);
+    } catch (err) {
+        console.error("❌ Failed to write data to file:", err.message);
+    }
 
 }
 
