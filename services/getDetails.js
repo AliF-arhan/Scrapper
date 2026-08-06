@@ -120,6 +120,22 @@ export async function getDetails(url, headers) {
     }));
 
     // ---------------------------------------------------
+    // Description
+    // ---------------------------------------------------
+    // SANY rarely fills productDesc with real per-model copy — it's
+    // usually empty or generic SEO boilerplate. Build a real description
+    // from the feature list instead, and only fall back to productDesc
+    // if there are no features at all.
+
+    const generatedDescription = features
+        .filter(f => f.title && f.description)
+        .map(f => `${f.title}: ${f.description}`)
+        .join(" ");
+
+    const description =
+        generatedDescription || data.product.productDesc || "";
+
+    // ---------------------------------------------------
     // Images
     // ---------------------------------------------------
 
@@ -147,7 +163,7 @@ export async function getDetails(url, headers) {
 
         title: data.product.productNo,
 
-        description: data.product.productDesc,
+        description,
 
         parameters,
 
@@ -160,3 +176,5 @@ export async function getDetails(url, headers) {
     };
 
 }
+
+
