@@ -1,5 +1,5 @@
 export const CONFIG = {
-    START_URL: "https://www.sanyglobal.com/product/excavator/mining-excavators/",
+    START_URL: "https://www.sanyglobal.com/product/excavator/medium_excavator/",
 
     REQUEST_DELAY: 1000,
 

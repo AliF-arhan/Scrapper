@@ -1,0 +1,142 @@
+[
+  {
+    "title": "SY215C",
+    "description": "Economical: Powered by a diesel engine, the excavator features fuel-efficient technology that can save as much as 10% on your fuel costs.  Big Digging Force: The digging force is excellent as all the working conditions are analyzed, combined with the accurate time power adjustment. Easy to Operate: Equipped with a unique handle, optimized valve trim structure, regenerating passage, innovative flow combining, and so on, the pressure loss is reduced to a minimum; thus, the excavator is very easy to operate. High Efficiency: With SANY’s optimized positive flow hydraulic system, the operating efficiency is improved by as much as 5%.",
+    "parameters": {
+      "Arm Digging Force": "103kN",
+      "Bucket Capacity": "0.93m³",
+      "Bucket Digging Force": "138kN",
+      "Carrier Wheel on Each Side": "2",
+      "Engine Displacement": "4.9L",
+      "Engine Model": "4M50",
+      "Engine Power": "118kW",
+      "Fuel Tank": "340L",
+      "Hydraulic Tank": "239L",
+      "Operating Weight": "21.9t",
+      "Radiator": "29L",
+      "Standard Boom": "5.7m",
+      "Standard Stick": "2.9m",
+      "Thrust Wheel on Each Side": "8"
+    },
+    "features": [
+      {
+        "title": "Economical",
+        "description": "Powered by a diesel engine, the excavator features fuel-efficient technology that can save as much as 10% on your fuel costs. "
+      },
+      {
+        "title": "Big Digging Force",
+        "description": "The digging force is excellent as all the working conditions are analyzed, combined with the accurate time power adjustment."
+      },
+      {
+        "title": "Easy to Operate",
+        "description": "Equipped with a unique handle, optimized valve trim structure, regenerating passage, innovative flow combining, and so on, the pressure loss is reduced to a minimum; thus, the excavator is very easy to operate."
+      },
+      {
+        "title": "High Efficiency",
+        "description": "With SANY’s optimized positive flow hydraulic system, the operating efficiency is improved by as much as 5%."
+      }
+    ],
+    "images": [
+      "https://ltmnfrssreehpvopsuje.supabase.co/storage/v1/object/public/altajir-listings/listings/exc1.jpg"
+    ],
+    "brochure": "https://www.sanyglobal.com/product/picture_album/20220921/SY215C_084233.pdf"
+  },
+  
+  {
+    "title": "SY245H",
+    "description": "Premium Productivity : Powerful, robust and reliable powertrain & hydraulic components are applied for the most demanding applications. Selectable working modes match machine performance to the application, maximizing productivity. Super Long Service Life: Through the accumulation of 15 years of experience and the “three-in-one” design and test system for large excavators of SANY, the operating life is more than 15,000H under mining working conditions. Super High Adaptability: Anti-corrosion coating, Independent extra-large radiator, High-capacity Multi-stage Filtration System. Intelligent System: Operation interface upgrade, intelligent operation interface of fashion technology, simpler and more convenient. Lower Fuel Consumption: Optimized positive flow hydraulics improve operating efficiency by up to 5% and fuel efficiency by up to 10%.",
+    "parameters": {
+      "Arm Digging Force": "120kN",
+      "Bucket Capacity": "1.3m³",
+      "Bucket Digging Force": "175kN",
+      "Carrier Wheel on Each Side": "2",
+      "Engine Displacement": "6.373L",
+      "Engine Model": "D06FRC",
+      "Engine Power": "147kW",
+      "Fuel Tank": "475L",
+      "Hydraulic Tank": "239L",
+      "Operating Weight": "25.5t",
+      "Radiator": "30.9L",
+      "Standard Boom": "5.9m",
+      "Standard Stick": "2.95m",
+      "Thrust Wheel on Each Side": "9"
+    },
+    "features": [
+      {
+        "title": "Premium Productivity ",
+        "description": "Powerful, robust and reliable powertrain & hydraulic components are applied for the most demanding applications. Selectable working modes match machine performance to the application, maximizing productivity."
+      },
+      {
+        "title": "Super Long Service Life",
+        "description": "Through the accumulation of 15 years of experience and the “three-in-one” design and test system for large excavators of SANY, the operating life is more than 15,000H under mining working conditions."
+      },
+      {
+        "title": "Super High Adaptability",
+        "description": "Anti-corrosion coating, Independent extra-large radiator, High-capacity Multi-stage Filtration System."
+      },
+      {
+        "title": "Intelligent System",
+        "description": "Operation interface upgrade, intelligent operation interface of fashion technology, simpler and more convenient."
+      },
+      {
+        "title": "Lower Fuel Consumption",
+        "description": "Optimized positive flow hydraulics improve operating efficiency by up to 5% and fuel efficiency by up to 10%."
+      }
+    ],
+    "images": [
+      "https://ltmnfrssreehpvopsuje.supabase.co/storage/v1/object/public/altajir-listings/listings/exc2.jpg"
+    ],
+    "brochure": "https://www.sanyglobal.com/product/picture_album/20220423/SY245H-173623.pdf"
+  },
+  
+
+  
+  {
+    "title": "SY335LC",
+    "description": "Premium Productivity : Powerful, robust and reliable powertrain & hydraulic components are applied for the most demanding applications. Selectable working modes match machine performance to the application, maximizing productivity. Super Long Service Life: Through the accumulation of 15 years of experience and the “three-in-one” design and test system for large excavators of SANY, the operating life is more than 15,000H under mining working conditions. Super High Adaptability: Anti-corrosion coating, Independent extra-large radiator, High-capacity Multi-stage Filtration System. Intelligent System: Operation interface upgrade, intelligent operation interface of fashion technology, simpler and more convenient. Lower Fuel Consumption: Optimized positive flow hydraulics improve operating efficiency by up to 5% and fuel efficiency by up to 10%.",
+    "parameters": {
+      "Arm Digging Force": "153kN",
+      "Bucket Capacity": "1.7m³",
+      "Bucket Digging Force": "204kN",
+      "Carrier Wheel on Each Side": "2",
+      "Engine Displacement": "8.9L",
+      "Engine Model": "Cummins L9",
+      "Engine Power": "209kW",
+      "Fuel Tank": "540L",
+      "Hydraulic Tank": "300L",
+      "Operating Weight": "33.6t",
+      "Radiator": "51L",
+      "Standard Boom": "6.15m",
+      "Standard Stick": "3.2m",
+      "Thrust Wheel on Each Side": "9"
+    },
+    "features": [
+      {
+        "title": "Premium Productivity ",
+        "description": "Powerful, robust and reliable powertrain & hydraulic components are applied for the most demanding applications. Selectable working modes match machine performance to the application, maximizing productivity."
+      },
+      {
+        "title": "Super Long Service Life",
+        "description": "Through the accumulation of 15 years of experience and the “three-in-one” design and test system for large excavators of SANY, the operating life is more than 15,000H under mining working conditions."
+      },
+      {
+        "title": "Super High Adaptability",
+        "description": "Anti-corrosion coating, Independent extra-large radiator, High-capacity Multi-stage Filtration System."
+      },
+      {
+        "title": "Intelligent System",
+        "description": "Operation interface upgrade, intelligent operation interface of fashion technology, simpler and more convenient."
+      },
+      {
+        "title": "Lower Fuel Consumption",
+        "description": "Optimized positive flow hydraulics improve operating efficiency by up to 5% and fuel efficiency by up to 10%."
+      }
+    ],
+    "images": [
+      "https://ltmnfrssreehpvopsuje.supabase.co/storage/v1/object/public/altajir-listings/listings/exc3.jpg"
+    ],
+    "brochure": "https://www.sanyglobal.com/sanyglobal-com-prd/prod/20260211/Sany-SY335LC_182932.pdf"
+  }
+
+
+]
